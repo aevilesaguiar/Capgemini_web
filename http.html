@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+    
+    <h1>Protocolo HTTP</h1>
+    
+    <p>O protocolo HTTP, Hypertext Transfer Protocol ou Protocolo de Transferência de Hipertexto, é um protocolo da camada de
+ aplicação do TCP/IP cuja função é de proporcionar a transferência de hipertexto. Este protocolo é usado desde 1990,
+  atualmente está na versão 1.1.</p>
+
+  <h2>Características do Protocolo HTTP</h2>
+
+  <ul>
+      <li>É um protocolo de camada de aplicação da WEB</li>
+      <li>É implementado em dois programas: Cliente e Servidor</li>
+      <li>O HTTP é quem define a estrutura da mensagem que o cliente vai trocar com o servidor e utiliza TCP como seu protocolo de transporte</li>
+      <li>Protocolo sem estado. O que significa que ele não mantém memória sobre suas ações. Ou seja se um cliente fizer uma requisição 
+          idêntica a uma anterior a qualquer momento, o HTTP não sabe informar sobre esse histórico.</li>
+
+  </ul>
+    <h2>Passos para uma comunicação HTTP</h2>
+    <ul>
+    <li>1 - É estabelecida uma conexão TCP entre o programa cliente e o servidor.</li>
+    <li>2 - O cliente envia uma requisição HTTP para sua interface socket.</li>
+    <li>3 - O TCP leva essa mensagem para a interface socket do servidor.</li>
+    <li>4 - O servidor envia uma resposta HTTP para sua interface socket.</li>
+    <li>5 - O TCP leva essa resposta para a interface socket do cliente.</li>
+    
+   </ul>
+
+   <h2>Como é o funcionamento do HTTP  explicando de outra forma</h2>
+
+   <p>Uma nova conexão deve ser feita para cada solicitação, isto é, cada vez que alguém acessa o seu site. Em suma, quando 
+       alguém digita a URL do seu site em um navegador, é isto que acontece:</p>
+
+    <ul>
+        <li>1 - se a URL pertencer a um domínio próprio, o navegador primeiro se conecta a um servidor e recuperará o endereço IP 
+            correspondente ao servidor;</li>
+        <li>2 - o navegador se conecta ao servidor e envia uma solicitação HTTP para a página da web desejada (que, neste exemplo, 
+            é o seu site);</li>
+        <li>3 - o servidor recebe a solicitação e verifica a página desejada. Se a página existir, o servidor a mostrará. Se o 
+            servidor não conseguir encontrar a página solicitada, ele enviará uma mensagem de erro HTTP 404, ou seja, página não
+             encontrada;</li>
+        <li>4 - o navegador, então, recebe a página de volta e a conexão é fechada;</li>
+        <li>5 - caso a página exista (e é isso que se espera), o navegador a analisa e procura outros elementos necessários para 
+            concluir a sua exibição, o que inclui seus textos, imagens e afins;</li>
+        <li>6 - para cada um desses elementos, o navegador faz conexões adicionais e solicitações HTTP para o servidor para 
+            cada elemento;</li>
+            <li>7- quando o navegador terminar de carregar todos os elementos, a página será carregada na janela do navegador.</li>
+
+    </ul>
+
+    <img src="image/http.jpg" style="height: 500px;">
+
+    <p>Um handshake TLS ocorre sempre que um usuário navega para um site por HTTPS e o navegador começa a consultar 
+        o servidor de origem do site . Um handshake TLS também acontece sempre que qualquer outra comunicação usa HTTPS,
+         incluindo chamadas de API e consultas DNS sobre HTTPS.</p>
+
+         <p> O provedor de internet, ou Internet Service Provider (ISP), é o intermediador que faz com que a internet 
+             chegue até os dispositivos. É um serviço promovido por empresas especializadas, que oferecem internet banda larga 
+             com conexões via cabo, satélite, rádio ou fibra. O servidor de serviços para internet é responsável por me dar um numero de
+             IP que vai me colocar nessa rede. E atravéss desse IP eu posso conectar em qualquer computador que tenha um numero de IP </p>
+
+        <p>O http tem uma comunicação bidirecional, request x response.
+        </p>
+
+        <h2> HTTP2?</h2>
+        <p>
+            O HTTP/2 permite a multiplexação completa de solicitação e resposta . Na prática, isso significa que uma 
+            conexão feita a um servidor web a partir do seu navegador pode ser usada para enviar várias solicitações 
+            e receber várias respostas. Isso elimina muito do tempo adicional necessário para estabelecer uma nova 
+            conexão para cada solicitação.</p>
+
+            <p>Https: conexão criptografada</p>
+
+        <h2> HTTPS</h2>
+        <p>HTTPS é uma implementação do protocolo HTTP sobre uma camada adicional de segurança que utiliza o protocolo SSL/TLS. 
+            Essa camada adicional permite que os dados sejam transmitidos por meio de uma conexão criptografada e que se verifique
+             a autenticidade do servidor e do cliente por meio de certificados digitais. </p>
+
+             <img src="image/https.JPG">
+
+            <p>Porta 80: responsavel pela conexão http</p>
+            <p>Porta 443: só para SSL , o servidor sabe que é uma conexão segura.</p>
+            <p> Change Cipher Spec: O que é uma especificação de cifra?
+                Um CipherSpec identifica uma combinação de algoritmo de criptografia e algoritmo de código de autenticação de mensagem (MAC) . 
+                Ambas as extremidades de uma conexão TLS, ou SSL, devem concordar com o mesmo CipherSpec para poder se comunicar.</p>
+
+                <h2> Request e Response</h2>
+            <p>Conversa bidirecional : request e response. Request é sempre feita do lado do cliente para o servidor, e o response do servidor
+                do lado servidor para o cliente.</p>
+
+            <h2>Request</h2>
+            <p>Request é composto de 4 partes no caso do GET e 5 no caso de outros verbos(acrescenta-se o body). Todos os nós que o request passa
+                eles vão saber o método, qual o caminho, qual a versão do protocolo, mas não terão acesso ao Headers e ao body da requisição, tudo ficará criptografado
+                quando ele recebe a chave criptografada que foi enviada no handshake pelo o cliente, aí o servidor abre o header e o body( no caso do PUT, POST e PATCH,
+                 o GET e o DELETE não tem body) 
+            </p>
+
+            <img src="image/request.JPG">
+
+
+            <h2>Response</h2>
+
+            <p>Response ele sempre terá um body. Nós temos a versão do protocolo, o status code e a message de Status e o Headers(cabeçalhos).
+                 </p>
+            <img src="image/response.JPG">
+
+
+            <h2>Verbos HTTP</h2>
+
+            <img src="image/verbos_http.JPG">
+
+            <ul>
+                <li>GET: usado para buscar, retornar a informação de um conteúdo, ele é usado apenas para consulta, pois ele não tem corpo;</li>
+                <li>POST: usado para enviar a informação para o servidor, é usado paenas quando quero incluir uma nova informação no servidor, 
+                    ele possui um corpo, geralmente o retorno é o id ou o corpo  ;</li>
+                <li>PUT: usado para alterar a informaçao no servidor , retiro a informação e coloco uma nova informação</li>
+                <li>PATCH: aplicar alterar modificações parciais, eu envio o id e a informação</li>
+                <li>DELETE:remove a informação </li>
+                <li>OPTIONS: usado na comunicação dos programas, os navegadores usam muito, retorna as operações possiveis de um recurso, 
+                    mais usado na camada de aplicação e API</li>
+            </ul>
+
+            <h2>Códigos HTTP</h2>
+
+            <p>Os códigos http são responsáveis pela resposta no servidor, evitando um trabalho maior do cliente.  </p>
+
+            <img src="image/codigos_http.JPG">
+
+            <p> Os códigos são divididos em grupos de 100.</p>
+            <p>OS códigos do 1xx ao 199 são códigos de informação, ele não é uma resposta final do servidor. </p>
+            <p>Os códigos do 2xx para cima são códigos de resposta final, toda pagina que carregamos na internet, ela 
+                respondendocom o status OK, porque foi carregada. O 201 é usado para criação de conteúdo,  o 202 é usado para dizer que foi aceito
+            , o 204 no content é usado por exemplo no DELETE, que ele reponde que não tem mais aquele conteúdo, mas que já foi feito</p>
+            <p>Os códigos 2xx são códigos de sucesso cada um tem um tipo de sucesso.</p>
+            <p>Os códigos 3xx são codigos de redirecionamento, ou seja quando vc recebe um código 300 o servidor está dizendo
+                eu estou te respondendo, mas estou te responsendo com outro recurso diferente do que você pediu. 301(Moved Permannntly, esse conteúdo não está mais aqui,
+                e foi apontado para outro lugar),302( ele é usado para transferencia temporario FOUND,um exemplo mudo o servidor para uma página temporária ) e 304(
+                muito utilizado para não modificado) é o mais usado </p>
+            <p>Os códigos 4xx são códigos de erro do cliente, ou seja o cliente fez alguma coisa errada.
+                Os códigos 400 tem algum problema no request , os mais usados são 401( quando vc não tem autorização para ver aquele recurso ), 403(
+                    é quando você não está autorizado para ver aquele recurso- Forbiden, proibido) e 404(not found, recurso não encontrado)</p>
+            <p>Os códigos 5xx são códigos de erro do servidor, ou seja o servidor fez alguma coisa errada.
+                os códigos 500 tem algum problema no response. Os códigos mais utilizados 500( erro interno do servidor - Internal Server Erro, ou seja o servidor não tem a informação 
+                 ou ele não quer informar), 501 (not implement, quando o servidor não consegur responder por que não tem isso emplemetnado), 502(
+                     Bad gateway , gateway  é uma porta ) e o 504(gateway timeout é qunado o gateway demora para responder).
+                 )</p>
+
+                <h2>O que é RFC e para que serve?</h2>
+                <p>Os Request for Comments (RFC) são documentos usados pela comunidade online há mais de 40 anos para definir os padrões da web e compartilhar informações técnicas. 
+                    Atualmente, os RFCs são gerenciados pela IETF (Internet Engineering Task Force).</p>
+
+                    
+
+</body>
+</html>

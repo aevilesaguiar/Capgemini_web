@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camadas de Internet</title>
+</head>
+<body>
+    <h1>Camadas da Internet</h1>
+    
+    <img src="image/camadasDaInternet.JPG">
+    <p> O processo é muito parecido com o envio da carta</p>
+    <p>Aplication: O servidor está enviando , a aplicação seria tipo um web Server(servidor web) um exemplo o cliente estaria enviando um arquivo <html>
+        html. O mais alto nível </p>
+    <p>Transporte: é feito atravéss do protocolo TCP. O transporte é o 1° passo o endereçamento ou seja para onde vai.</p>
+    <p> Netowork(rede): é a camada do IP, ptotocolo de internet. é o transporte de um lugar para o outro. </p>
+    <p>Data Link: responsavel pela conexão de um com outro. A conexão do Data Link é a conexão de baixo nível, seria o ETHERNET, O cabo </p>
+    <p>Physical: é parte fisica, a transmissão dos dados.  </p>
+
+
+    <h2> DNS</h2>
+    <p>Sistema de Nomes de Domínio (Domain Name System): O Sistema de Nomes de Domínio, ou servidor de nome de dominio mais conhecido pela nomenclatura em Inglês Domain Name System, 
+        é um sistema hierárquico e distribuído de gestão de nomes para computadores, serviços ou qualquer máquina conectada à Internet ou a uma rede privada.
+    </p>
+
+    <p>Por exemplo eu quero acessar o www.example.com eu passo por todas as camadas da internet, e eu preciso do endereço do site
+        e o endereço do site é identificado na camada IP, onde eu vou saber de qual ponto para qual ponto eu vou enviar, ou seja o IP,
+        é o endereço do computador no meio de toda essa rede. Para poder acessar um site nós deveriamos saber o endereço IP, e isso é muito complicado
+        por isso foi criado o DNS,para traduzir esse endereço de IP para um nome de dominio</p>
+
+
+    <img src="image/dns.JPG">
+
+    <h2> TCP/IP</h2>
+
+    <p>TCP/IP é a camada de Transporte</p>
+    <p>Lembrando que temos a camada de aplicação, e a camada de aplicação passa para camada de transporte. </p>
+    <p> Primeiro a camada de aplicação vai descobrir para onde irá mandar utilizando o DNS. Exemplo google.com tem o endereço de
+        ip  8.8.8.8. Quem envia a informação é a camada de transporte , e essa informação não vai em linha reta. Pois como sabemos 
+        passamos por vários servidores para chegar ao endereço final. A conexão da internet é transportada em teia. O TCP quebra a informação em vários pacotes
+        e transmite. O IP calcula chega no roteador, e elá ele calcula a rota mais rápida enviar esses pacotes. Aí o TCP para de enviar esses pacotes,
+        quando recebe a informaçao de que o pacote foi recebido. E esse envio acontece diversas vezes. E se algum pacote foi perdido o TCP continua enviando o pacote,
+        até ser sinalizado que foi recebido. O TCP do lado do cliente junta as informações e entrega para a aplicação. E é assim que é feita a transmissãode dados utilizando o TCP/IP.
+    </p>
+
+    <img src="image/tcp_ip.JPG">
+
+
+    <h2>Deep Web</h2>
+
+    <p>Deep web e surface web conformam uma divisão do conteúdo da rede mundial de computadores quanto à indexação 
+        feita por mecanismos de busca padrão. Deep web corresponde à parte não indexada e surface web é a parte indexada. </p>
+
+        
+
+
+</body>
+</html>
