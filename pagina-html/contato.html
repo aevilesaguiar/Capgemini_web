@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currículo Aeviles - Contato</title>
+  </head>
+  <body>
+    <form method="get">
+      <label>Nome: <input type="text" name="nome" placeholder="nome" /></label>
+      <br />
+      <br />
+      <label
+        >E-mail: <input type="email" name="email" placeholder="e-mail" id=""
+      /></label>
+      <br />
+      <br />
+      <label
+        >Telefone:
+        <input type="tel" name="telefone" placedholder="telefone" id=""
+      /></label>
+      <br />
+      <br />
+      <label
+        >Idade: <input type="number" name="idade" placeholder="idade"
+      /></label>
+      <br /><br />
+      <label
+        >Linkedin:
+        <input type="url" name="url" placeholder="Linkedin URL incluir https"
+      /></label>
+      <br /><br />
+      <label
+        >Urgencia:
+        <input type="range" name="urgencia" min="0" max="100" step="0.1"
+      /></label>
+      <br /><br />
+      <label
+        >Dia da semana:<br />
+        <input
+          type="checkbox"
+          name="dia-da-semana"
+          value="2" />Segunda-feira<br />
+        <input
+          type="checkbox"
+          name="dia-da-semana"
+          value="4" />Quarta-feira<br />
+        <input
+          type="checkbox"
+          name="dia-da-semana"
+          value="6" />Sexta-feira<br />
+        <br /><br
+      /></label>
+
+      <label
+        >Horário:<br />
+        <input type="radio" name="horario" value="manha" />Manhã<br />
+        <input type="radio" name="horario" value="tarde" />Tarde<br />
+        <input type="radio" name="horario" value="noite" />Noite<br />
+      </label>
+      <br />
+      <br />
+      <label for="">
+        <select name="cidade" id="">
+          <option value="">Selecione a cidade</option>
+          <option value="São Paulo">São Paulo</option>
+          <option value="São Paulo">Rio de Janeiro</option>
+          <option value="Blumenau">Porto Alegre</option>
+        </select>
+      </label>
+      <br />
+      <br />
+      <label
+        >Qual o seu navegador:
+        <br />
+        <input list="browsers" name="navegador" />
+        <datalist id="browsers">
+          <option value="Chrome"></option>
+          <option value="Firefox"></option>
+          <option value="Internet Explorer"></option>
+          <option value="Opera"></option>
+          <option value="Safari"></option>
+        </datalist>
+      </label>
+      <br />
+      <br />
+      <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
+
+      <br />
+      <br />
+      <button type="button">Outra Ação</button>
+      <button type="reset">Limpar</button>
+      <button type="submit">Enviar</button>
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

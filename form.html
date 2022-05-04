@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Formularios</h1>
+   
+    <p>A tag form pode ser enviada de duas formas para o servidor: </p>
+    <ul>
+      <li>POST: quando eu quero enviar a informação para o servidor. O POST tem body, e a informação é enviada através
+       do corpo e a informação é recebida pela servidor. Eu uso o POST quando eu quero criar um novo recurso no servidor.
+      </li>
+      <li>GET:quando eu quero puxar a informação do Servidor. O método GET não tem corpo, por isso enviamos a informação
+        através da url. Em termos práticos não podemos usar o GET para conteúdos sensíveis como senhas, cpfs, para fazer 
+        logins, por que a query var pode ficar exposta e trazer algum problema para o usuário Ex:O próprio google usa o
+         get pois não tem corpo, e cada informação é separada por & ou seja cada variável é separada por &.   </li>
+    </ul>
+    <p>O action também tem valor padrão, ele vai determinar para qual url aquela requisição GET ou POST será enviado.</p>
+
+  </body>
+</html>
