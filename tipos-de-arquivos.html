@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipos de Arquivos</title>
+  </head>
+  <body>
+    <h1>Tipo de arquivo de imagem e guia de formato</h1>
+
+    <table>
+      <caption>
+        Tipos de arquivo de imagem comuns
+      </caption>
+      <p>
+        Os formatos de arquivo de imagem mais usados ​​na web estão listados
+        abaixo.
+      </p>
+
+      <thead>
+       <tr>
+
+        <th>Abreviação</th>
+        <th>Formato de arquivo</th>
+        <th>Tipo MIME</th>
+        <th>Extensões de arquivo)</th>
+        <th>Resumo</th>
+       </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>APNG</th>
+          <th>Gráficos de rede portátil animados</th>
+          <th>image/apng</th>
+          <th>	.apng</th>
+          <th>Boa escolha para sequências de animação sem perdas (o GIF tem menos desempenho). AVIF e WebP têm melhor desempenho, mas suporte menos amplo ao navegador.
+            Suportado : Chrome, Edge, Firefox, Opera, Safari.</th>
+        </tr>
+
+        <tr>
+          <th>AVIF</th>
+          <th>Formato de arquivo de imagem AV1</th>
+          <th>image/avif</th>
+          <th>.avif</th>
+          <th>	
+            Boa escolha para imagens e imagens animadas devido ao alto desempenho e formato de imagem livre de royalties. Ele oferece uma compactação muito melhor do que PNG ou JPEG com suporte para profundidades de cor mais altas, quadros animados, transparência etc. Observe que ao usar AVIF, você deve incluir fallbacks para formatos com melhor suporte ao navegador (ou seja, usando o <picture>elemento).
+            Suportado: Chrome, Opera, Firefox (apenas imagens fixas: imagens animadas não implementadas).</th>
+        </tr>
+
+        <tr>
+          <th>GIF</th>
+          <th>	Formato de intercâmbio de gráficos</th>
+          <th>image/gif</th>
+          <th>.gif</th>
+          <th>Boa escolha para imagens e animações simples. Prefira PNG para imagens estáticas sem perdas e indexadas e considere WebP, AVIF ou APNG para sequências de animação.
+            Suportado: Chrome, Edge, Firefox, IE, Opera, Safari.</th>
+        </tr>
+
+        
+        <tr>
+          <th>JPEG</th>
+          <th>Imagem do Grupo Conjunto de Especialistas em Fotografia</th>
+          <th>image/jpeg</th>
+          <th>	.jpg, .jpeg, .jfif, .pjpeg,.pjp</th>
+          <th>Boa escolha para compactação com perdas de imagens estáticas (atualmente a mais popular). Prefira PNG quando for necessária uma reprodução mais precisa da imagem, ou WebP/AVIF se for necessária uma melhor reprodução e maior compactação.
+            Suporte: Chrome, Edge, Firefox, IE, Opera, Safari.</th>
+        </tr>
+
+        <tr>
+          <th>PNG</th>
+          <th>	Gráficos Portáteis de Rede</th>
+          <th>image/png</th>
+          <th>.png</th>
+          <th>O PNG é preferível ao JPEG para uma reprodução mais precisa das imagens de origem ou quando a transparência é necessária. O WebP/AVIF oferece compactação e reprodução ainda melhores, mas o suporte ao navegador é mais limitado.
+            Suporte: Chrome, Edge, Firefox, IE, Opera, Safari.</th>
+        </tr>
+
+        <tr>
+          <th>SVG</th>
+          <th>Gráficos vetoriais escalonáveis</th>
+          <th>image/svg+xml</th>
+          <th>.svg</th>
+          <th>Formato de imagem vetorial; ideal para elementos de interface de usuário, ícones, diagramas, etc., que devem ser desenhados com precisão em diferentes tamanhos.
+            Suporte: Chrome, Edge, Firefox, IE, Opera, Safari.</th>
+        </tr>
+
+        
+        <tr>
+          <th>WebP</th>
+          <th>Formato de imagem da Web</th>
+          <th>image/webp</th>
+          <th>.webp</th>
+          <th>Excelente escolha para imagens e imagens animadas. WebP oferece uma compactação muito melhor do que PNG ou JPEG com suporte para profundidades de cor mais altas, quadros animados, transparência etc. AVIF oferece compactação um pouco melhor, mas não é tão bem suportado em navegadores e não suporta renderização progressiva.
+            Suporte: Chrome, Edge, Firefox, Opera, Safari</th>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      O ideal é que se defina no html o with e o heigth no html, não é
+      obrigatório.
+    </p>
+    <p>src: source é a origem do arquivos</p>
+
+    <p>No html nós temos a tag figure, essa tag pode ser utilizado para imagem, código que queremos expor, dar um destaque. </p>
+    <p>a tag picture é utilizado apenas para imagem, se nenhuma das minhas umagens funcionar ela funciona </p>
+ 
+  </body>
+</html>
