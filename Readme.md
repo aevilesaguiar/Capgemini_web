@@ -3,5 +3,5 @@
 - História do www
 - HTTP
 - Camadas de Internet
--  Navegadores
+- Navegadores
 
