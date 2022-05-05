@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa no CSS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;600&display=swap"
+      rel="stylesheet"
+    />
+</head>
+
+    <h1>Modelo de caixa no CSS</h1>
+    <p>Em CSS, o termo "modelo de caixa" é usado quando se fala de design e layout. O modelo de caixa CSS é essencialmente
+         uma caixa que envolve todos os elementos HTML. É constituída por: margens, bordas, preenchimento e conteúdo real.</p>
+   
+         <img src="../image/modelo-caixa.png" alt="">
+
+    <p>Temos o conteudo(pode ser paragrafo, pode ser um link, texto.</p>
+    <p>Padding espaçamento interno do seu conteúdo. Ele é o espaçamento entre a borda e o conteúdo</p>
+    <p>O que define o tamanho do conteúdo é a largura e a altura. </p>
+    <p>O padding, o border e a margin vão definir o tamanho do conteúdo.</p>
+    <p> box-sizing que permite que mudemos o comportamento do box-model.Temos tres tipos de boxing-sizing:</p>
+    <ul>
+        <li>Border-Box:As propriedades de largura (width) e de altura (height) incluem o tamanho padding size e a 
+            propriedade border, mas não incluem a propriedade margin.</li>
+        <li>Content-box: Essa é o estilo padrão, conforme especificado pela norma CSS. As propriedades width (largura) e 
+            height (altura) são medidas incluindo só o conteúdo, mas não o padding, border ou margin. Nota: Padding, border 
+            e margin serão fora da box. Exemplo.: Se .box {width: 350px} então se você aplicar uma propriedade 
+            {border: 10px solid black;} o resultado renderizado no navegador (browser) será .box {width: 370px;}</li>
+        <li>padding-box:As propriedades de largura (width) e de altura (height) incluem o tamanho padding size, mas
+            não incluem a propriedade border ou margem. </li>
+
+    </ul>
+</body>
+</html>

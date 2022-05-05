@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte, Texto e Links</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+   <h1>Fonte:é o que define como os caracteres vão aparecer na tela </h1>
+    <img src="/image/fontes.JPG" alt="">
+    <p>font-family: propriedade que o navegador vai utilizar para renderizar o tipo de fonte.
+      Tipos de fontes:serif - fonte serifada, sans-serif: sem serifa , coursive: imita a forma de 
+      escrever manual, fantasy: utilizada para textos enfeitados; 
+    </p>
+    <p>font-face</p>
+    <p>font-style : oblique, italic, normal</p>
+    <p>font-variant: trabalha com a capitalização da fonte : maiuscula ou minuscula, all-small-caps(coloco maiusculas em minusculas)
+        small-caps: a letra maiuscula não muda, só a minuscula.
+    </p>
+    <p>font-weigth : negrito e que a gradação vai de 100 a 900, ou bold, bolder...</p>
+    <p>font-size: tamanho da fonte. Para termos compatibilidade com as telas, ao invéns de trabalharmos com pixel, usamos o em, que é o espaçamento da letra
+       "em" , mas surgiu uma outra especificação rem 
+    </p>
+
+    <h3>Diferença entre pixel , rem e em</h3>
+
+    <p>PX : Pixels (px) são considerados unidades absolutas, embora sejam relativos ao DPI e resolução do dispositivo de 
+        visualização. Mas no próprio dispositivo, a unidade PX é fixa e não muda com base em nenhum outro elemento. O uso
+         do PX pode ser problemático para sites responsivos, mas é útil para manter o dimensionamento consistente de 
+         alguns elementos. Se você tiver elementos que não devem ser redimensionados, usar o PX é uma boa escolha.</p>
+
+    <p>em: O nome em significa emphemeral unit, ou traduzindo para o português, unidade transitória. Relativo ao elemento pai</p>
+      
+    <p>REM : Relativo ao elemento raiz (tag HTML)</p>
+
+    <p>Vejamos um exemplo simples.</p>
+
+    <p>Na maioria dos navegadores, o tamanho da fonte padrão é 16px. As unidades relativas calculam o tamanho a partir 
+        desta base. Se você alterar essa base definindo um tamanho de base para a tag HTML via CSS, isso se tornará a 
+        base para calcular as unidades relativas no restante da página. Da mesma forma, se um usuário ajustar o tamanho
+         da fonte, isso se tornará a base para calcular as unidades relativas.</p>
+<p>O número que você especificar multiplicará esse número pelo tamanho padrão.</p>
+
+<p>1em = 16px (1 * 16) -  2em = 32px (2 * 16) - .5em = 8px (.5 * 16)</p>
+<p>1rem = 16px  -  2rem = 32px  -  .5rem = 8px </p>
+<p>100% = 16px  -  200% = 32px  - 50% = 8px</p>
+
+<p>REM é baseado no elemento raiz (HTML). Cada elemento filho que usa REM usará o tamanho da raiz HTML como seu ponto de cálculo.
+    O EM, por outro lado, é baseado no tamanho da fonte do elemento pai. Se um elemento pai tiver um tamanho diferente do elemento 
+    raiz, o cálculo EM será baseado no elemento pai e não no elemento raiz. 
+</p>
+
+<h2>Texto</h2>
+
+<p>text-ident: define a identação do texto (paragrafo)</p>
+
+<p>O alinhamento do texto pode ser definido por três tipos tipos- text-align:center, left, rigth, justify(não é indicado), start, end;</p>
+
+<p>text-decoration: forma de alterar a decoração do texto. text-decoration:underline, line-througth, overline(propriedades que são funcionais); </p>
+
+<p>letter-spacing: define o espaçamento das letras no texto, posso usar px, em ou rem;</p>
+
+<p>text-transform: uppercase, lowercase, capitalize. Usamos para alterar como o texto aparece na tela. </p>
+
+
+<h2>Links</h2>
+
+<p>Os links são normalmente editáveis pelo o navegador, eles aparecem com underline e clicáveis</p>
+<p>Posso alterar as cores dos links, mudar o cursor e outros...</p>
+
+<p>cursor: move, auto, cell, all-scroll... Altera como mostra o cursor</p>
+
+<p>Pseudos seletores:Pseudoelementos são como elementos virtuais que podem ser tratados como elementos regulares da 
+    marcação HTML. Contudo, eles não existem na árvore do documento (no DOM) pois são criados com uso de CSS. Alguns 
+    pseudoelementos mais conhecidos são: :after , :before e :first-letter .</p>
+
+
+</body>
+</html>
