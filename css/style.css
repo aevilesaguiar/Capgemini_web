@@ -23,6 +23,7 @@ time, mark, audio, video {
     text-decoration: none;
     font-family: 'Work Sans', sans-serif;
     box-sizing: border-box;
+    line-height: 2;
     
 }
 /* HTML5 display-role reset for older browsers */
@@ -54,6 +55,7 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+    
 }
 
 h1{
@@ -82,10 +84,8 @@ p{
 }
 
 body{
-    padding: 50px;
-    line-height: 1.5;
- 
-    
+    padding: 50px 150px;
+    line-height: 1.5;  
 }
 
  .dados-lista{
@@ -102,4 +102,8 @@ a:visited{
 
 button::before{
     color: #2275b0;
+}
+
+.li-bold{
+    font-weight: bold;
 }
