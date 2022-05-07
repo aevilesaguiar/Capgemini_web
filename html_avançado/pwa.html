@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,159 +12,213 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;600&display=swap"
       rel="stylesheet"
     />
-</head>
-<body>
-    
-    <h1>Protocolo HTTP</h1>
-    
-    <p>O protocolo HTTP, Hypertext Transfer Protocol ou Protocolo de Transferência de Hipertexto, é um protocolo da camada de
- aplicação do TCP/IP cuja função é de proporcionar a transferência de hipertexto. Este protocolo é usado desde 1990,
-  atualmente está na versão 1.1.</p>
+  </head>
+  <body>
+    <h1>PWA</h1>
 
-  <h2>Características do Protocolo HTTP</h2>
+    <h2>Progressive Web Apps – padrão ou palavra da moda?</h2>
+    <p>
+      Progressive Web Apps (PWA) é uma maneira moderna de construir aplicativos,
+      incluindo os móveis, usando tecnologias puramente web e confiando apenas
+      nos recursos e pontos fortes da plataforma web. Historicamente, foi a
+      falta desses recursos na Web que causou o boom dos aplicativos móveis,
+      usando as chamadas abordagens de desenvolvimento "nativas" (específicas da
+      plataforma).
+    </p>
 
-  <ul>
-      <li>É um protocolo de camada de aplicação da WEB</li>
-      <li>É implementado em dois programas: Cliente e Servidor</li>
-      <li>O HTTP é quem define a estrutura da mensagem que o cliente vai trocar com o servidor e utiliza TCP como seu protocolo de transporte</li>
-      <li>Protocolo sem estado. O que significa que ele não mantém memória sobre suas ações. Ou seja se um cliente fizer uma requisição 
-          idêntica a uma anterior a qualquer momento, o HTTP não sabe informar sobre esse histórico.</li>
+    <h3>
+      Site para verificar o suporte do PWA
+      <a href="https://whatwebcando.today/">https://whatwebcando.today/</a>
+    </h3>
 
-  </ul>
-    <h2>Passos para uma comunicação HTTP</h2>
+    <p>
+      Surgido como um novo modelo de desenvolvimento de software, o Progressive
+      Web App (PWA) transforma os navegadores (páginas web) em verdadeiras
+      plataformas de apps!
+    </p>
+
+    <p>
+      Segundo a Wikipédia: Progressive Web App (PWA) é um termo usado para
+      denotar aplicativos da web que usam as últimas tecnologias da web. Os
+      aplicativos da web progressivos são páginas web (ou sites) tecnicamente
+      regulares, mas podem aparecer ao usuário como aplicativos tradicionais ou
+      aplicativos móveis (nativos). Este novo tipo de aplicativo tenta combinar
+      os recursos oferecidos pela maioria dos navegadores modernos com os
+      benefícios da experiência móvel.
+    </p>
+    <p>
+      Em resumo, é uma aplicação web com tecnologias que permitem termos a
+      experiência de uso muito próxima da oferecida pelos mobile apps. As
+      funcionalidades que estas tecnologias nos permitem são:
+    </p>
+
     <ul>
-    <li>1 - É estabelecida uma conexão TCP entre o programa cliente e o servidor.</li>
-    <li>2 - O cliente envia uma requisição HTTP para sua interface socket.</li>
-    <li>3 - O TCP leva essa mensagem para a interface socket do servidor.</li>
-    <li>4 - O servidor envia uma resposta HTTP para sua interface socket.</li>
-    <li>5 - O TCP leva essa resposta para a interface socket do cliente.</li>
-    
-   </ul>
-
-   <h2>Como é o funcionamento do HTTP  explicando de outra forma</h2>
-
-   <p>Uma nova conexão deve ser feita para cada solicitação, isto é, cada vez que alguém acessa o seu site. Em suma, quando 
-       alguém digita a URL do seu site em um navegador, é isto que acontece:</p>
-
-    <ul>
-        <li>1 - se a URL pertencer a um domínio próprio, o navegador primeiro se conecta a um servidor e recuperará o endereço IP 
-            correspondente ao servidor;</li>
-        <li>2 - o navegador se conecta ao servidor e envia uma solicitação HTTP para a página da web desejada (que, neste exemplo, 
-            é o seu site);</li>
-        <li>3 - o servidor recebe a solicitação e verifica a página desejada. Se a página existir, o servidor a mostrará. Se o 
-            servidor não conseguir encontrar a página solicitada, ele enviará uma mensagem de erro HTTP 404, ou seja, página não
-             encontrada;</li>
-        <li>4 - o navegador, então, recebe a página de volta e a conexão é fechada;</li>
-        <li>5 - caso a página exista (e é isso que se espera), o navegador a analisa e procura outros elementos necessários para 
-            concluir a sua exibição, o que inclui seus textos, imagens e afins;</li>
-        <li>6 - para cada um desses elementos, o navegador faz conexões adicionais e solicitações HTTP para o servidor para 
-            cada elemento;</li>
-            <li>7- quando o navegador terminar de carregar todos os elementos, a página será carregada na janela do navegador.</li>
-
+      <li>- Push Notification</li>
+      <li>- Ícone na tela home do smartphone</li>
+      <li>- Splash screen</li>
+      <li>- Processos rodando em background</li>
+      <li>- Suporte a funcionamento em modo Offline</li>
+      <li>- Acesso à camera e galeria</li>
+      <li>- Acesso à geolocalização</li>
+      <li>- Acesso à os contatos</li>
+      <li>- outros</li>
     </ul>
 
-    <img src="/image/http.jpg" style="height: 500px;">
+    <p>
+      Se o browswe não suportar um recurso, ele só não irá ter o recurso, mais o
+      resto funciona. Instalar ou não é escolha do usuário. É usado pelo twiter,
+      facebook, uber e outros...
+    </p>
 
-    <p>Um handshake TLS ocorre sempre que um usuário navega para um site por HTTPS e o navegador começa a consultar 
-        o servidor de origem do site . Um handshake TLS também acontece sempre que qualquer outra comunicação usa HTTPS,
-         incluindo chamadas de API e consultas DNS sobre HTTPS.</p>
+    <section>
+      <h2>Vantagens PWA(Progressive Web App)</h2>
+      <ul>
+        <li>- Poucas alterações fonte.</li>
+        <li>- Permite o uso de HTML/CSS/JavaScript</li>
+        <li>- Acesso á API'S como câmmera, microfone e localização</li>
+        <li>- Aplicações Leves</li>
+        <li>
+          - Engajar o cliente em uma jornada. No primeiro acesso você resolve o
+          problema dele e ponto. Os próximos acessos você monta uma jornada:
+          pedindo as permissões de funcionalidades avançadas para o seu cliente,
+          primeiro o push para ele receber notícias e afins, depois criar um
+          ícone na home do smartphone, etc. Neste modelo o cliente não precisa
+          ter a decisão de instalar ou remover o app. A medida que ele vai
+          usando sua PWA ela vai se tornando cada vez mais parecida com um app.
+        </li>
+        <li>
+          - Envio de notificações push (alertas ou pop-up de sites ou apps)
+        </li>
+        <li>- Pode ser usado offline</li>
+        <li>
+          - Multiplataforma(IOS, Androide, SmartTvs, MacOS, Linux, Windowns)
+        </li>
+      </ul>
+    </section>
 
-         <p> O provedor de internet, ou Internet Service Provider (ISP), é o intermediador que faz com que a internet 
-             chegue até os dispositivos. É um serviço promovido por empresas especializadas, que oferecem internet banda larga 
-             com conexões via cabo, satélite, rádio ou fibra. O servidor de serviços para internet é responsável por me dar um numero de
-             IP que vai me colocar nessa rede. E atravéss desse IP eu posso conectar em qualquer computador que tenha um numero de IP </p>
+    <section>
+      <h2>Desvantagens do PWA:</h2>
+      <ul>
+        <li>
+          - Não fica disponivel nas lojas do sistema operacional (android e IOS)
+        </li>
+        <li>- Se a aplicação for pesada, pode ficar lento</li>
+        <li>- Acesso limitado ou inxexistente á alguns recursos:</li>
+        <li>
+          - Pode funcionar de formas diferentes quando usa diferentes sistemas
+          operacionais diferentes
+        </li>
+      </ul>
+</section>
 
-        <p>O http tem uma comunicação bidirecional, request x response.
+    <section>
+      <h2>App Shell</h2>
+
+      <p>
+        é o mínimo de HTML, CSS e javaScript que alimenta uma interface de
+        usuário
+      </p>
+
+      <p>Entre as premissas , estão:</p>
+      <ul>
+        <li>- Promover Carregamento rápido</li>
+        <li>- Ter armazenamento em cache</li>
+        <li>- Ter exibição dinâmica de conteúdo</li>
+      </ul>
+
+      
+      <p>A arquiteura do app shell leva em consideração os seguintes pontos:</p>
+      <ul>
+        <li>
+          - Priorização do carregamento inicial, ou seja , o service worker ,
+          armazenará cache dos itens básicos para economizar tempo de
+          carregamento;
+        </li>
+        <li>
+          - Carregamento assícrono visando já montar de forma rápida o
+          aplicativo. Us de cache é bem vindo.
+        </li>
+        <li>
+          - Usar ferramentas confiáveis de gerenciamento de conteúdo estático
+          para armazenar e atualizar cache
+        </li>
+      </ul>
+
+      <p>
+        O shell do aplicativo é uma maneira de renderizar uma parte do seu
+        aplicativo usando uma rota em tempo de compilação. Ele pode melhorar a
+        experiência do usuário ao iniciar rapidamente uma página renderizada
+        estática (um esqueleto comum a todas as páginas) enquanto o navegador
+        baixa a versão completa do cliente e alterna para ela automaticamente
+        após o carregamento do código.
+        <br />
+        Isso dá aos usuários uma primeira pintura significativa do seu
+        aplicativo que aparece rapidamente porque o navegador pode renderizar o
+        HTML e o CSS sem a necessidade de inicializar qualquer JavaScript.
+      </p>
+
+      <p>Documentação: <a href="https://web.dev/learn/pwa/architecture/">https://web.dev/learn/pwa/architecture/</a></p>
+    
+    </section>
+
+    <section>
+        <h2>Instalando o service Work para dar andamento no PWA</h2>
+
+        <p>Se estiver usando o node usamos esse comando:</p>
+        <p>npm install serviceworker</p>
+
+        <p>- Depois vamos incluir o serviceWorker</p>
+
+        <img src="/image/service_worker.JPG" alt="" width="200px">
+        <p>Se tiver serviceworker em navigator se sim ele coloca a mensagem </p>
+    </section>
+
+    <section>
+        <h2>Criar manifest json</h2>
+
+        <p>O que é o arquivo manifest.json 
+            <br>
+
+            O arquivo é um documento em JSON, nomeado como manifest. json, que fornece meta dados para a 
+            Progressive Web App. O arquivo fica armazenado no servidor onde a página está hospedada.
         </p>
 
-        <h2> HTTP2?</h2>
-        <p>
-            O HTTP/2 permite a multiplexação completa de solicitação e resposta . Na prática, isso significa que uma 
-            conexão feita a um servidor web a partir do seu navegador pode ser usada para enviar várias solicitações 
-            e receber várias respostas. Isso elimina muito do tempo adicional necessário para estabelecer uma nova 
-            conexão para cada solicitação.</p>
+        <p>Exemplo de gerador de arquivo manifest:</p>
 
-            <p>Https: conexão criptografada</p>
+        <ul>
+            <li> <a href="https://app-manifest.firebaseapp.com/"> https://app-manifest.firebaseapp.com/</a> </li>
+            <li> <a href="https://www.simicart.com/manifest-generator.html/">https://www.simicart.com/manifest-generator.html/</a></li>
+        </ul>
 
-        <h2> HTTPS</h2>
-        <p>HTTPS é uma implementação do protocolo HTTP sobre uma camada adicional de segurança que utiliza o protocolo SSL/TLS. 
-            Essa camada adicional permite que os dados sejam transmitidos por meio de uma conexão criptografada e que se verifique
-             a autenticidade do servidor e do cliente por meio de certificados digitais. </p>
+        <p>Criar icone é indicado 512x 512</p>
 
-             <img src="/image/https.JPG">
+        <img src="/image/arquivo-manifest.JPG" alt="">
 
-            <p style="margin-top: 50px;">Porta 80: responsavel pela conexão http</p>
-            <p>Porta 443: só para SSL , o servidor sabe que é uma conexão segura.</p>
-            <p> Change Cipher Spec: O que é uma especificação de cifra?
-                Um CipherSpec identifica uma combinação de algoritmo de criptografia e algoritmo de código de autenticação de mensagem (MAC) . 
-                Ambas as extremidades de uma conexão TLS, ou SSL, devem concordar com o mesmo CipherSpec para poder se comunicar.</p>
+        <img src="/image/arquivo_manifest_json.JPG" alt="">
 
-                <h2> Request e Response</h2>
-            <p>Conversa bidirecional : request e response. Request é sempre feita do lado do cliente para o servidor, e o response do servidor
-                do lado servidor para o cliente.</p>
+        <p>Os arquivos gerados no manifest servirá também para o favicon</p>
+    </section>
 
-            <h2>Request</h2>
-            <p>Request é composto de 4 partes no caso do GET e 5 no caso de outros verbos(acrescenta-se o body). Todos os nós que o request passa
-                eles vão saber o método, qual o caminho, qual a versão do protocolo, mas não terão acesso ao Headers e ao body da requisição, tudo ficará criptografado
-                quando ele recebe a chave criptografada que foi enviada no handshake pelo o cliente, aí o servidor abre o header e o body( no caso do PUT, POST e PATCH,
-                 o GET e o DELETE não tem body) 
-            </p>
+    <section>
+        <h2>CACHE</h2>
 
-            <img src="/image/request.JPG" height="400px">
+        <p>O service Worker possuia as seguintes etapas:</p>
+        <ul>
+            <li>- Install : ativado só uma vez, se alterar, é chamado novamente</li>
+            <li>- Activate: chamado só uma vez , quando uma nova versão so sw.js é instalada, e se não tiver outra versão
+                sendo executada. é aqui onde deleta as antigas
+            </li>
+            <li>- Fetch: Usado toda vez que a página é requisitada. A API Fetch fornece uma interface JavaScript para acessar e manipular 
+                partes do pipeline HTTP, tais como os pedidos e respostas. Ela também fornece o método global fetch() (en-US) que fornece 
+                uma maneira fácil e lógica para buscar recursos de forma assíncrona através da rede.</li>
+            <li>- Message</li>
+            <li>- sync</li>
+            <li>- push</li>
+        </ul>
 
 
-            <h2>Response</h2>
-
-            <p>Response ele sempre terá um body. Nós temos a versão do protocolo, o status code e a message de Status e o Headers(cabeçalhos).
-                 </p>
-            <img src="/image/response.JPG" height="400px">
+    </section>
 
 
-            <h2>Verbos HTTP</h2>
-
-            <img src="/image/verbos_http.JPG" height="400px">
-
-            <ul>
-                <li>GET: usado para buscar, retornar a informação de um conteúdo, ele é usado apenas para consulta, pois ele não tem corpo;</li>
-                <li>POST: usado para enviar a informação para o servidor, é usado paenas quando quero incluir uma nova informação no servidor, 
-                    ele possui um corpo, geralmente o retorno é o id ou o corpo  ;</li>
-                <li>PUT: usado para alterar a informaçao no servidor , retiro a informação e coloco uma nova informação</li>
-                <li>PATCH: aplicar alterar modificações parciais, eu envio o id e a informação</li>
-                <li>DELETE:remove a informação </li>
-                <li>OPTIONS: usado na comunicação dos programas, os navegadores usam muito, retorna as operações possiveis de um recurso, 
-                    mais usado na camada de aplicação e API</li>
-            </ul>
-
-            <h2>Códigos HTTP</h2>
-
-            <p>Os códigos http são responsáveis pela resposta no servidor, evitando um trabalho maior do cliente.  </p>
-
-            <img src="/image/codigos_http.JPG" height="400px">
-
-            <p> Os códigos são divididos em grupos de 100.</p>
-            <p>OS códigos do 1xx ao 199 são códigos de informação, ele não é uma resposta final do servidor. </p>
-            <p>Os códigos do 2xx para cima são códigos de resposta final, toda pagina que carregamos na internet, ela 
-                respondendocom o status OK, porque foi carregada. O 201 é usado para criação de conteúdo,  o 202 é usado para dizer que foi aceito
-            , o 204 no content é usado por exemplo no DELETE, que ele reponde que não tem mais aquele conteúdo, mas que já foi feito</p>
-            <p>Os códigos 2xx são códigos de sucesso cada um tem um tipo de sucesso.</p>
-            <p>Os códigos 3xx são codigos de redirecionamento, ou seja quando vc recebe um código 300 o servidor está dizendo
-                eu estou te respondendo, mas estou te responsendo com outro recurso diferente do que você pediu. 301(Moved Permannntly, esse conteúdo não está mais aqui,
-                e foi apontado para outro lugar),302( ele é usado para transferencia temporario FOUND,um exemplo mudo o servidor para uma página temporária ) e 304(
-                muito utilizado para não modificado) é o mais usado </p>
-            <p>Os códigos 4xx são códigos de erro do cliente, ou seja o cliente fez alguma coisa errada.
-                Os códigos 400 tem algum problema no request , os mais usados são 401( quando vc não tem autorização para ver aquele recurso ), 403(
-                    é quando você não está autorizado para ver aquele recurso- Forbiden, proibido) e 404(not found, recurso não encontrado)</p>
-            <p>Os códigos 5xx são códigos de erro do servidor, ou seja o servidor fez alguma coisa errada.
-                os códigos 500 tem algum problema no response. Os códigos mais utilizados 500( erro interno do servidor - Internal Server Erro, ou seja o servidor não tem a informação 
-                 ou ele não quer informar), 501 (not implement, quando o servidor não consegur responder por que não tem isso emplemetnado), 502(
-                     Bad gateway , gateway  é uma porta ) e o 504(gateway timeout é qunado o gateway demora para responder).
-                 )</p>
-
-                <h2>O que é RFC e para que serve?</h2>
-                <p>Os Request for Comments (RFC) são documentos usados pela comunidade online há mais de 40 anos para definir os padrões da web e compartilhar informações técnicas. 
-                    Atualmente, os RFCs são gerenciados pela IETF (Internet Engineering Task Force).</p>
-
-                    
-
-</body>
+  </body>
 </html>
