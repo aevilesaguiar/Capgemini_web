@@ -114,7 +114,46 @@
 </section>
 
 <section>
-<h2>CSP</h2>
+<h2>CSP - Politica de Segurança de conteúdo - Content Security Policy</h2>
+<p>O que é Política de Segurança de Conteúdo?
+  <br>
+  Content-Security-Policy é o nome de um cabeçalho de resposta HTTP que os navegadores modernos usam para aumentar 
+  a segurança do documento (ou página da web). O cabeçalho Content-Security-Policy permite restringir como recursos
+   como JavaScript, CSS ou praticamente qualquer coisa que o navegador carrega.
+Embora seja usado principalmente como um cabeçalho de resposta HTTP, você também pode aplicá-lo por meio de uma metatag .
+
+O termo Política de Segurança de Conteúdo é frequentemente abreviado como CSP .
+</p>
+
+<p>Cross-site Scripting é um ataque de injeção de código malicioso que se aproveita de brechas em aplicações 
+  web para se apropriar de dados no navegador.</p>
+
+<p>Que tipos de ataques o Content-Security-Policy ajuda a mitigar?<br>
+  O CSP foi projetado inicialmente para reduzir a superfície de ataque de ataques Cross Site Scripting (XSS), 
+  versões posteriores da especificação também protegem contra outras formas de ataque, como Click Jacking.</p>
+<ul>
+  <li>- é uma camada adicional de segurança, visando detectar e amenizar alguns tipos de ataque, como injeção de dados e Cross-Origin
+    Site Scripting /XSS.
+  </li>
+  <li>- Geralmente estes ataques baseiam-se em ir em algum formulario e inserir javaScript para obter alguma
+    vantagem, como roubo de dados ou distribuição de malware.
+  </li>
+
+  <li>- Para Habilitar a camada de segurança, usamos a seguinte linha no  head
+    <br> meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';"
+  </li>
+  <li>- Guia Completo: <a href="https://content-security-policy.com/#:~:text=Content%2DSecurity%2DPolicy%20is%20the,anything%20that%20the%20browser%20loads.">https://content-security-policy.com/</a> </li>
+</ul>
+
+
+
+<h2>Análise de Site - Analise Observatory Mozilla</h2>
+<ul>
+  <li>Podemos analisar o site sobre este ponto através do <a href="https://observatory.mozilla.org/analyze/">https://observatory.mozilla.org/analyze/</a></li>
+  <li>Este site nos dá uma nota e a análise completa do foi testado</li>
+  <li>A tarvés da análise, o site nos indica sugestões de melhoria</li>
+
+</ul>
 
 </section>
 
@@ -184,5 +223,9 @@
       href="https://www.perallis.com/news/o-que-e-o-owasp-top-10-quais-sao-as-vulnerabilidades-mais-comuns"
       >OWASP Top 10</a
     >
+
+    <a href="https://content-security-policy.com/">GUIA : Content Security Policy</a>
+
+    <a href="https://observatory.mozilla.org/analyze/">Analise de site mozilla</a>
   </body>
 </html>
