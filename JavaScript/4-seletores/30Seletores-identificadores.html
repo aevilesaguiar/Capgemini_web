@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de Identificador - JS</title>
+    <!--JS-->
+    <script>
+       //função
+        function exibirConteudo(){
+            //obter dados do id Campo
+
+            var campo=document.getElementById("campo");
+            
+            //Exibir conteúdo
+            alert(campo.value);
+
+            //O input agente usa Value , outro comando de texto usamos innerHtml
+
+         //Apagar o conteudo o value não serve apenas para enviar dados, ele limpa e faz outras ações
+         campo.value=""; //aqui ele está limpando
+        }
+       
+    </script>
+</head>
+<body >
+<input type="text" name="" id="campo">
+<button onclick="exibirConteudo()">Clique Aqui</button>
+</body>
+</html>

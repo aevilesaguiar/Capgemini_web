@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 1 - Variaveis</title>
+
+    <script lang="JavaScript">
+
+      //variaveis
+      var segundosPorMinuto=60;
+      var minutosPorHora = 60;
+      var horasPorDia=24;
+      var diasPorAno=365;
+
+      //calculos
+      var segundosPorDia = segundosPorMinuto* horasPorDia*minutosPorHora;
+      var segundosPorAno=segundosPorDia*diasPorAno;
+    </script>
+  </head>
+  <body>
+    <script>
+      //documento no corpo do html
+      document.writeln("<b> O ano tem ");
+      document.writeln(segundosPorAno);
+      document.writeln(" segundos </b>");
+    </script>
+  </body>
+</html>

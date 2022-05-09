@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos - JS</title>
+    <!--JS-->
+    <script>
+        //atributos são complementações, o comando a é nossa tag e o https://proway.com.br é a complmentação "atributo"
+       //função
+       function alterarLink(){
+           //obter link
+           var link=document.getElementsByTagName("a")[0];
+
+           //alterar o link
+           link.href="https://google.com.br"
+       }
+       
+       
+       
+    </script>
+</head>
+<body >
+        <a href="https://proway.com.br">Clique Aqui!</a>
+        <button onclick="alterarLink()">Alterar Link</button>
+</body>
+</html>

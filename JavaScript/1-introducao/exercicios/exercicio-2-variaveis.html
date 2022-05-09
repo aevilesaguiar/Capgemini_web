@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 2 - Variaveis</title>
+
+    <script lang="JavaScript">
+      //PEDE A VARIAVEL PARA O USUARIO
+      var diaHoje=prompt("Que dia é hoje?", "");
+
+      //declarar strings Cutas
+      var agradavel="é um dia muito Agradável ";
+      var pergunta=", mas é hoje ou amanhã? ";
+      var estudo = " é um ótimo dia para se estudar javaScript ";
+      var sono = ", mas também é um dia perfeito para dormir.";
+
+      //constroi strings longas
+
+      var diaAgradavel = diaHoje + agradavel+pergunta;
+      var diaCansado = diaHoje+estudo+sono;
+
+      //Modifica a aparencia das strings
+      var agradavelNegrito = diaAgradavel.bold();
+      var sonoItalico =sono.italics();
+      var agradavel_berrante= diaAgradavel.toUpperCase();
+      var sonoFrio = diaCansado.fontcolor('blue'); 
+    
+    </script>
+  </head>
+  <body>
+    <script>
+      document.writeln(agradavelNegrito + "<br>");
+      document.writeln(sonoItalico+"<br>");
+      document.writeln(agradavel_berrante + "<br>");
+      document.writeln(sonoFrio+"<br>");
+    </script>
+  </body>
+</html>
