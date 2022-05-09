@@ -13,11 +13,18 @@
         //quando o documento estiver pronto faça
         $(document).ready(function(){
 
+            //colocando a função e o gatilho no mesmo local
             //Evento de click
             $("button").click(function(){
                 //Adicionar um texto no h1
                 $("h1").html("Você clicou no botão.");
-            });//em JS não tem o prefixo onclick, onpage..
+            });//em JS não tem o prefixo "on"click, "on"page..
+
+
+            $("img").mouseout(function(){
+                $("p").html("substitui");
+            });
+
         })
      
        
@@ -26,5 +33,9 @@
 <body >
         <h1></h1>
         <button>Clique Aqui!</button>
+
+        
+        <img src="/image/cors_erro.JPG" alt="">
+        <p></p>
 </body>
 </html>

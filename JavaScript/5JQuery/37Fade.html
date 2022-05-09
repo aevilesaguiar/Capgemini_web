@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exibir e Ocultar - JQuery - JS</title>
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <!--Script-->
+    <script>
+      $(document).ready(function () {
+
+        //Ocultar h1
+        $("h1").css("display","none");
+
+        //Exibir o h1
+        $("#exibir").click(function(){
+          $("h1").fadeIn("slow"); //fadein é exibir
+        });
+
+        //ocultar o h1
+
+        $("#ocultar").click(function(){//como é o ID tem que ter a cerquilha
+          $("h1").fadeOut(3000);//fadeOut esconder
+        });
+
+        /*
+        opções para se trabalhar com o fadeIn e FadeOut
+        tempo
+        1° default 0,4s
+        2° slow 0,6s
+        3° pode colocar um tempo, e ele trabalha em milisegundos valor 3000= 3s*/
+        
+      });
+    </script>
+  </head>
+  <body>
+    <button id="exibir">Exibir</button>
+    <button id="ocultar">Ocultar</button>
+    <hr>
+   <h1>Aprendendo jQuery</h1>
+  </body>
+</html>
